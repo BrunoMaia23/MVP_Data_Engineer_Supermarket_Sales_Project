@@ -1,4 +1,4 @@
-# MVP_Data_eEgineer_Supermarket_Sales_Project
+# MVP_Data_Engineer_Supermarket_Sales_Project
 
 # Análise de Vendas e Otimização da Cadeia de Suprimentos em Supermercados
 
