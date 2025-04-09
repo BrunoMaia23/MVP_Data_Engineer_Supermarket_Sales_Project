@@ -49,6 +49,13 @@ Investigar padrões de compra dos clientes a fim de:
 
 ---
 
+🧠 Conclusão & Insights
+A análise dos dados de vendas do supermercado revelou padrões valiosos de comportamento do consumidor e desempenho financeiro. Observamos que a linha de produtos "Food and Beverages" lidera em receita, enquanto a forma de pagamento "Ewallet" é amplamente preferida, indicando uma tendência crescente por transações digitais. A cidade com maior faturamento foi Naypyitaw, sugerindo maior poder aquisitivo ou concentração de consumo. Além disso, a margem de lucro variou significativamente entre os produtos, sendo essencial focar nos itens de maior retorno. Estes insights podem embasar decisões estratégicas de marketing, gestão de estoque e expansão comercial, maximizando o desempenho da operação.
+
+---
+
+
+
 ## 🧪 Tecnologias Utilizadas
 - Databricks
 - Apache Spark (PySpark)
