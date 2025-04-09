@@ -20,15 +20,15 @@ Este projeto tem como objetivo analisar os dados de vendas de supermercados para
 
 ### Camada Bronze
 - **Descrição:** Ingestão dos dados brutos (CSV) e armazenamento em formato Parquet/Delta.
-- **Arquivo(s):** `notebooks/01_bronze_layer.ipynb`
+
 
 ### Camada Silver
 - **Descrição:** Processamento e transformação dos dados com limpeza, conversão de datas, criação de colunas derivadas e aplicação de arredondamentos.
-- **Arquivo(s):** `notebooks/02_silver_layer.ipynb`
+
 
 ### Camada Gold
 - **Descrição:** Agregações e análises utilizando consultas SQL para extrair insights que respondem às perguntas de negócio.
-- **Arquivo(s):** `notebooks/03_gold_layer.sql`
+
 
 ## Resultados e Insights
 - Inclua aqui um resumo dos principais resultados extraídos das análises, assim como evidências visuais (veja a pasta `evidencias/`).
