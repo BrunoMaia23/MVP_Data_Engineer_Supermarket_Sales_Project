@@ -8,6 +8,9 @@ Investigar padrões de compra dos clientes a fim de:
 - Auxiliar na definição de estratégias de marketing (promoções, segmentação, campanhas).
 - Otimizar a gestão de estoque e logística com base no comportamento de vendas.
 
+## 🗃️ Coleta de Dados
+Os dados utilizados neste projeto foram obtidos a partir de um conjunto de dados disponível no Kaggle, intitulado "Supermarket Sales". Este dataset contém informações detalhadas sobre as transações de vendas em diferentes filiais de um supermercado, incluindo detalhes como data da compra, tipo de cliente, gênero, linha de produto, método de pagamento, entre outros.
+
 ## ❓ Perguntas de Negócio
 - Quais são as linhas de produtos com maior faturamento?
 - Quais filiais e cidades geram mais vendas?
@@ -26,35 +29,27 @@ Investigar padrões de compra dos clientes a fim de:
 ### 🔸 Camada Silver
 - **Descrição:** Transformações e limpeza dos dados.
 - **Operações:**
-  - Conversão de datas e timestamps.
-  - Criação de colunas derivadas: dia da semana, mês, ano, margem de lucro.
-  - Padronização de nomes de colunas e arredondamentos.
+  - **Conversão de datas e timestamps:** As colunas de data foram convertidas para o formato DateTime apropriado para facilitar análises temporais.
+  - **Criação de colunas derivadas:** Foram adicionadas colunas como dia da semana, mês e ano, extraídas a partir das datas originais, além da margem de lucro calculada.
+  - **Padronização de nomes de colunas e arredondamentos:** Os nomes das colunas foram padronizados para seguir uma convenção consistente, e valores numéricos foram arredondados conforme necessário para manter a precisão adequada.
 
 ### 🥇 Camada Gold
 - **Descrição:** Agregações e análises analíticas com SQL.
 - **Objetivo:** Responder diretamente às perguntas de negócio e extrair insights estratégicos.
 
----
-
 ## 📊 Principais Resultados
 
-| Insight | Detalhes |
-|--------|----------|
-| **Produto mais lucrativo** | *Food and Beverages* (R$ 56.144,84 de faturamento) |
-| **Cidade com maior receita** | *Naypyitaw* (R$ 110.568,71) |
-| **Método de pagamento mais utilizado** | *Dinheiro (Cash)* |
-| **Gênero com maior ticket médio** | *Feminino (Member)* |
-| **Melhor dia para vendas** | *Sábado* |
+| Insight                             | Detalhes                                 |
+|-------------------------------------|------------------------------------------|
+| **Produto mais lucrativo**          | *Food and Beverages* (R$ 56.144,84 de faturamento) |
+| **Cidade com maior receita**        | *Naypyitaw* (R$ 110.568,71)              |
+| **Método de pagamento mais utilizado** | *Dinheiro (Cash)*                        |
+| **Gênero com maior ticket médio**   | *Feminino (Member)*                      |
+| **Melhor dia para vendas**          | *Sábado*                                 |
 | **Linha de produto com melhor avaliação** | *Food and Beverages* (Nota média: 7.11) |
 
----
-
-🧠 Conclusão & Insights
+## 🧠 Conclusão & Insights
 A análise dos dados de vendas do supermercado revelou padrões valiosos de comportamento do consumidor e desempenho financeiro. Observamos que a linha de produtos "Food and Beverages" lidera em receita, enquanto a forma de pagamento "Ewallet" é amplamente preferida, indicando uma tendência crescente por transações digitais. A cidade com maior faturamento foi Naypyitaw, sugerindo maior poder aquisitivo ou concentração de consumo. Além disso, a margem de lucro variou significativamente entre os produtos, sendo essencial focar nos itens de maior retorno. Estes insights podem embasar decisões estratégicas de marketing, gestão de estoque e expansão comercial, maximizando o desempenho da operação.
-
----
-
-
 
 ## 🧪 Tecnologias Utilizadas
 - Databricks
@@ -63,9 +58,6 @@ A análise dos dados de vendas do supermercado revelou padrões valiosos de comp
 - Delta Lake
 - Kaggle Datasets
 
----
-
 **Schema Gold:** (branch: string, city: string, customer_type: string, gender: string, product_line: string, payment: string, gross_income: double, total: double, rating: double, quantity: int, unit_price: double, cost: double, date: date, day_of_week: string, month: string, year: int, profit_margin: double)
-
 
 Link do projeto: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4309397897107765/57874218684306/6097631161230774/latest.html
