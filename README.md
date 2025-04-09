@@ -66,3 +66,6 @@ A análise dos dados de vendas do supermercado revelou padrões valiosos de comp
 ---
 
 **Schema Gold:** (branch: string, city: string, customer_type: string, gender: string, product_line: string, payment: string, gross_income: double, total: double, rating: double, quantity: int, unit_price: double, cost: double, date: date, day_of_week: string, month: string, year: int, profit_margin: double)
+
+
+Link do projeto: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4309397897107765/57874218684306/6097631161230774/latest.html
