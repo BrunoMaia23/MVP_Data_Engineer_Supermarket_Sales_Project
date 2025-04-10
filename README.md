@@ -37,6 +37,57 @@ Os dados utilizados neste projeto foram obtidos a partir de um conjunto de dados
 - **Descrição:** Agregações e análises analíticas com SQL.
 - **Objetivo:** Responder diretamente às perguntas de negócio e extrair insights estratégicos.
 
+## 🗃️ Catálogo de Tabelas
+
+### Camada Bronze
+
+| Nome da Coluna             | Tipo    | Nulável |
+|----------------------------|---------|---------|
+| Invoice ID                 | string  | sim     |
+| Branch                     | string  | sim     |
+| City                       | string  | sim     |
+| Customer type              | string  | sim     |
+| Gender                     | string  | sim     |
+| Product line               | string  | sim     |
+| Unit price                 | double  | sim     |
+| Quantity                   | integer | sim     |
+| Tax 5%                     | double  | sim     |
+| Total                      | double  | sim     |
+| Date                       | date    | sim     |
+| Time                       | timestamp | sim   |
+| Payment                    | string  | sim     |
+| COGS                       | double  | sim     |
+| Gross margin percentage    | double  | sim     |
+| Gross income               | double  | sim     |
+| Rating                     | double  | sim     |
+
+### Camada Silver
+
+| Nome da Coluna             | Tipo      | Nulável |
+|----------------------------|-----------|---------|
+| invoice_id                 | string    | sim     |
+| branch                     | string    | sim     |
+| city                       | string    | sim     |
+| customer_type              | string    | sim     |
+| gender                     | string    | sim     |
+| product_line               | string    | sim     |
+| unit_price                 | double    | sim     |
+| quantity                   | integer   | sim     |
+| tax_5                      | double    | sim     |
+| total                      | double    | sim     |
+| date                       | date      | sim     |
+| time                       | string    | sim     |
+| payment                    | string    | sim     |
+| cogs                       | double    | sim     |
+| gross_margin_perc          | double    | sim     |
+| gross_income               | double    | sim     |
+| rating                     | double    | sim     |
+| datetime                   | timestamp | sim     |
+| weekday                    | string    | sim     |
+| month                      | integer   | sim     |
+| year                       | integer   | sim     |
+| profit_margin              | double    | sim     |
+
 ## 📊 Principais Resultados
 
 | Insight                             | Detalhes                                 |
@@ -60,4 +111,6 @@ A análise dos dados de vendas do supermercado revelou padrões valiosos de comp
 
 **Schema Gold:** (branch: string, city: string, customer_type: string, gender: string, product_line: string, payment: string, gross_income: double, total: double, rating: double, quantity: int, unit_price: double, cost: double, date: date, day_of_week: string, month: string, year: int, profit_margin: double)
 
-Link do projeto: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4309397897107765/57874218684306/6097631161230774/latest.html
+Link do projeto: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa
+::contentReference[oaicite:3]{index=3}
+ 
